@@ -291,6 +291,11 @@ public class PlayerBehaviour : MonoBehaviour
             other.gameObject.GetComponent<MovingPlatformController>().isActive = true;
             transform.SetParent(other.gameObject.transform);
         }
+        if (other.gameObject.CompareTag("ShrinkPlatform"))
+        {
+            //other.gameObject.GetComponent<ShrinkPlatformBehaviours>().isActive = true;
+            transform.SetParent(other.gameObject.transform.parent);
+        }
     }
 
     private void OnCollisionExit2D(Collision2D other)
@@ -298,6 +303,10 @@ public class PlayerBehaviour : MonoBehaviour
         if (other.gameObject.CompareTag("Moving Platform"))
         {
             other.gameObject.GetComponent<MovingPlatformController>().isActive = false;
+            transform.SetParent(parent);
+        }
+        if (other.gameObject.CompareTag("ShrinkPlatform"))
+        {
             transform.SetParent(parent);
         }
     }
