@@ -15,6 +15,7 @@ TagManager:
   - Acorn
   - Gem
   - Moving Platform
+  - ShrinkPlatform
   layers:
   - Default
   - TransparentFX

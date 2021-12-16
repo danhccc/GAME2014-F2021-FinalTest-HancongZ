@@ -1,4 +1,13 @@
-﻿using System.Collections;
+﻿// GAME2014-FinalProject
+// PlayerBehaviours.cs
+// Description: This script include player controls, abilities, sounds and platform support
+// Name: Hancong Zhang
+// Student ID: 101234068
+// Short rivision history:
+//      - Initial project from Tom
+
+
+using System.Collections;
 using System.Collections.Generic;
 using Cinemachine;
 using Unity.Mathematics;
