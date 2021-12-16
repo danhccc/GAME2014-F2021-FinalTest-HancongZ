@@ -23028,8 +23028,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cd28beb931c3d14a9be948c77c32498, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isGrounded: 0
   groundLevel: {x: 0, y: 0, z: 0}
+  isActive: 0
+  shrinkRate: 0.005
 --- !u!4 &1548052357 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 1143666446871949209, guid: 23d3f5859519ef4489fe8416d4719108, type: 3}

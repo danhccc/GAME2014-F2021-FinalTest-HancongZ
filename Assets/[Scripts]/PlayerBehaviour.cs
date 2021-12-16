@@ -5,6 +5,7 @@
 // Student ID: 101234068
 // Short rivision history:
 //      - Initial project from Tom
+//      - Adding ShrinkPlatform support (set/reset parent)
 
 
 using System.Collections;
@@ -293,7 +294,7 @@ public class PlayerBehaviour : MonoBehaviour
         }
         if (other.gameObject.CompareTag("ShrinkPlatform"))
         {
-            //other.gameObject.GetComponent<ShrinkPlatformBehaviours>().isActive = true;
+            other.gameObject.GetComponent<ShrinkPlatformBehaviours>().isActive = true;
             transform.SetParent(other.gameObject.transform.parent);
         }
     }
@@ -307,6 +308,7 @@ public class PlayerBehaviour : MonoBehaviour
         }
         if (other.gameObject.CompareTag("ShrinkPlatform"))
         {
+            other.gameObject.GetComponent<ShrinkPlatformBehaviours>().isActive = false;
             transform.SetParent(parent);
         }
     }
